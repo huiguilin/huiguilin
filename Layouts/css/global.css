@@ -1,0 +1,315 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-size: 13px;
+	font-family: "Arial,宋体";
+}
+a{
+	text-decoration: none;
+	color: #333333;
+}
+ul li{
+	list-style: none;
+}
+input{
+	border: none;
+}
+/*顶部订阅分享区域*/
+#top_rss{
+	width: 100%;
+	height: 30px;
+	background: #F6F8FA;
+	border-bottom: 3px solid #E3E4E8;
+}
+#top_rss #top_rss_box{
+	width: 960px;
+	height: 28px;
+	margin: 0 auto;
+	position: relative;
+}
+#top_rss #top_rss_box img{
+	position: absolute;
+	top:6px;
+	left: 4px;
+}
+#top_rss #top_rss_box .left_ul li{
+	float: left;
+}
+#top_rss #top_rss_box .left_ul li.one{
+	width: 49px;
+	height: 13px;
+	position: absolute;
+	top: 10px;
+	left: 25px;
+	border-right: 1px solid #434A54;
+}
+#top_rss #top_rss_box .left_ul li.two{
+	width: 61px;
+	height: 13px;
+	position: absolute;
+	top: 10px;
+	left: 84px;
+}
+#top_rss #top_rss_box .left_ul li a{
+	color: #434A54;
+	display: block;
+	height: 13px;
+	line-height: 13px;
+}
+#top_rss #top_rss_box .left_ul li a:hover{
+	text-decoration: underline;
+}
+#top_rss #top_rss_box .right_ul{
+	position: absolute;
+	top: 10px;
+	right: 0px;
+}
+#top_rss #top_rss_box .right_ul li{
+	float: left;
+	width: 50px;
+	height:13px;
+	background: url(../images/ico_01.png) no-repeat 28px 1px;
+}
+#top_rss #top_rss_box .right_ul li.two{
+	border-left: 1px solid #434A54;
+	padding-left: 9px;
+	background-position: 37px 1px;
+}
+#top_rss #top_rss_box .right_ul li a{
+	color: #434A54;
+	display: block;
+	height: 13px;
+	line-height: 13px;
+}
+#top_rss #top_rss_box .right_ul li a:hover{
+	text-decoration: underline;
+}
+/*顶部订阅分享区域结束*/
+/*Logo区域*/
+#top_logo_box{
+	width: 960px;
+	height: 52px;
+	margin: 0 auto;
+	position: relative;
+}
+#top_logo_box a{
+	
+}
+#top_logo_box a #logo{
+	position: absolute;
+	top: 11px;
+	left:16px;
+	width: 114px;
+	height:35px;
+	border: none;
+}
+#top_logo_box a #slogan{
+	position: absolute;
+	top: 25px;
+	left:138px;
+	border: none;
+}
+#top_logo_box #login{
+	position: absolute;
+	top: 22px;
+	right: 5px;
+}
+#top_logo_box #login li{
+	width: 56px;
+	height: 16px;
+	float: left;
+	border-left: 1px solid gray;
+}
+#top_logo_box #login li.one{
+	background: url(../images/login.png) no-repeat 0 -2px;
+	border: none;
+}
+#top_logo_box #login li a{
+	display: block;
+	width: 56px;
+	height: 16px;
+	color: #ED5565;
+	line-height: 16px;
+}
+#top_logo_box #login li a:hover{
+	text-decoration: underline;
+}
+#top_logo_box #login li a.one{
+	padding-left: 22px;
+}
+#top_logo_box #login li a.two{
+	padding-left: 6px;
+}
+/*Logo区域结束*/
+/*导航区域*/
+#top_nav_box{
+	width: 960px;
+	height: 47px;
+	margin: 0 auto;
+	border-bottom:2px solid #DB4453;
+	/*border-radius: 5px;*/
+	background: #ED5565;
+	position: relative;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(Layouts/js/border-radius.htc);
+
+}
+#top_nav_box #left_collection{
+	position: absolute;
+	top:8px;
+	left: 9px;
+	width: 145px;
+	height: 35px;
+	background: white;
+	/*border-radius: 5px;*/
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(Layouts/js/border-radius.htc);
+}
+#top_nav_box #left_collection .left_img{
+	position: absolute;
+	top:4px;
+	left:10px;
+}
+#top_nav_box #left_collection span{
+	color: #ED5565;
+	font-weight:bold;
+	font-size: 18px;
+	position: absolute;
+	top: 9px;
+	left: 50px;
+}
+#top_nav_box #nav{
+	position: absolute;
+	top:0px;
+	left:165px;
+}
+#top_nav_box #nav li{
+	float: left;
+	width: 112px;
+	height: 48px;
+	border-left: 1px solid #DB4453;
+}
+#top_nav_box #nav li.one{
+	background: #DB4453;
+}
+#top_nav_box #nav li.four{
+	border-right: 1px solid #DB4453;
+}
+#top_nav_box #nav li a{
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	display: inline-block;
+	height: 48px;
+	line-height: 48px;
+	width: 112px;
+	text-align: center;
+}
+#top_nav_box #nav li a.one:hover{
+	display: inline-block;
+	background: #F6808B;
+}
+/*搜索框区域*/
+#top_nav_box #search_box{
+	width: 236px;
+	height: 32px;
+	/*border-radius: 5px;*/
+	position: absolute;
+	top: 9px;
+	right: 20px;
+	background:url(../images/bg_search.png);
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(Layouts/js/border-radius.htc);
+
+}
+#top_nav_box #search_box input{
+	outline: none;
+}
+#top_nav_box #search_box #search_con{
+	width: 198px;
+	height: 25px;
+	position: absolute;
+	top: 3px;
+	left: 7px;
+	background: none;
+}
+#top_nav_box #search_btn{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 1px;
+	right: 0px;
+	background: none;
+}
+/*搜索框区域结束*/
+/*导航区域结束*/
+
+/*最底部区域*/
+#bottom_info{
+	width: 100%;
+	height: 180px;
+	background: #DB4453;
+	margin-top: 50px;
+}
+#bottom_info #bottom_box{
+	width: 960px;
+	height: 180px;
+	margin:0 auto;
+	position: relative;
+}
+#bottom_info #bottom_box p{
+	color: white;
+	font-size: 14px;
+}
+#bottom_info #bottom_box img{
+	position: absolute;
+	top: 20px;
+	left:850px;
+}
+#bottom_info #bottom_box ul{
+	position: absolute;
+	top: 28px;
+	left: 0px;
+}
+#bottom_info #bottom_box ul li{
+	float: left;
+	width:75px;
+	height: 14px;
+	border-right: 1px solid white;
+	padding-left: 10px;
+}
+#bottom_info #bottom_box ul li.one{
+	padding-left: 0px;
+}
+#bottom_info #bottom_box ul li.six{
+	border:none;
+}
+#bottom_info #bottom_box ul li a{
+	color: white;
+	font-size: 14px;
+}
+#bottom_info #bottom_box ul li a:hover{
+	text-decoration: underline;
+}
+#bottom_info #bottom_box .p_box {
+	position: absolute;
+	top: 70px;
+	left: 0px;
+}
+#bottom_info #bottom_box .p_box a{
+	color: white;
+	font-size: 14px;
+}
+#bottom_info #bottom_box .p_box a:hover{
+	text-decoration: underline;
+}
+/*最底部区域结束*/
