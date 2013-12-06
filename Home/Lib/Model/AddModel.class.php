@@ -2,7 +2,6 @@
 class AddModel extends Model {
 
     protected $trueTableName = 't_monkey_ad';
-    protected $dbName = 'monkey';
 
 
     public function getAdByAdId($ids = array()) {

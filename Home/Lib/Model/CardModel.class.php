@@ -3,7 +3,6 @@
 class CardModel extends Model {
 
     protected $trueTableName = 't_monkey_membership_card';
-    protected $dbName = 'monkey';
 
 
     public function getCardByCardId($cIds = array()) {

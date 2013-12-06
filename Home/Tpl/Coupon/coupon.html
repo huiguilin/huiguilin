@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="layouts/css/global.css" />
+<link rel="stylesheet" type="text/css" href="Layouts/css/global.css" />
 <link rel="stylesheet" type="text/css" href="Layouts/css/coupon.css">
 <script type="text/javascript" src="Layouts/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="Layouts/js/index.js"></script>
@@ -20,7 +20,7 @@
 <!-- 顶部订阅分享区域 -->
 	<div id="top_rss">
 		<div id="top_rss_box">
-			<img src="Layouts/images/cellphone.png">
+			<img src="{$IMAGE_URL}Layouts/images/cellphone.png">
 			<ul class="left_ul">
 				<li class="one"><a href="">手机版</a></li>
 				<li class="two"><a href="">使用帮助</a></li>
@@ -35,8 +35,8 @@
 <!-- 顶部订阅分享区域结束 -->
 <!-- Logo区域 -->
 	<div id="top_logo_box">
-		<a href="#"><img src="Layouts/images/logo.png" alt="惠桂林" id="logo" /></a>
-		<a href="#"><img src="Layouts/images/slogan.png" alt="吃喝玩乐，惠享生活" id="slogan" /></a>
+		<a href="#"><img src="{$IMAGE_URL}Layouts/images/logo.png" alt="惠桂林" id="logo" /></a>
+		<a href="#"><img src="{$IMAGE_URL}Layouts/images/slogan.png" alt="吃喝玩乐，惠享生活" id="slogan" /></a>
 		<ul id="login">
 			<li class="one"><a href="" class="one">登陆</a></li>
 			<li><a href="" class="two">快速注册</a></li>
@@ -46,7 +46,7 @@
 <!--  导航区域 -->
 	<div id="top_nav_box">
 		<div id="left_collection">
-			<img class="left_img" src="Layouts/images/ico_02.png" alt="" />
+			<img class="left_img" src="{$IMAGE_URL}Layouts/images/ico_02.png" alt="" />
 			<span>全部分类</span>
 		</div>
 		<ul id="nav">
@@ -65,7 +65,7 @@
 	<!-- 图片轮换板区域 -->
 	<div id="advertising">
         <foreach name="ads" item="a">
-		<img src="{$a['img_path']}" alt="" />
+		<img src="{$IMAGE_URL}{$a['img_path']}" alt="" />
         </foreach>
 		<ul>
             <foreach name="ads" item="a" key="i">
@@ -136,20 +136,20 @@
 			<ul>
                 <foreach name="coupons" item="c">
 				<li>
-					<img class="one" src="Layouts/images/ico_11.png" alt="" />
+					<img class="one" src="{$IMAGE_URL}Layouts/images/ico_11.png" alt="" />
 					<a class="title" href="">{$c['name']}</a>
 					<a href="" class="content">{$c['description']}</a>
 					<a href="" class="btn">去看看</a>
-					<img class="two" src={$c['header_path']} alt="" />
+					<img class="two" src="{$IMAGE_URL}{$c['header_path']}" alt="" />
 					<div>
-						<img src="Layouts/images/ico_10.png" alt="" />
+						<img src="{$IMAGE_URL}Layouts/images/ico_10.png" alt="" />
 						<p>{$c['tag']}</p>
 					</div>
                     <if condition="$c['label_type'] % 10 eq 1">
-                    <img class="three" src="Layouts/images/mrq.png" alt="" />
+                    <img class="three" src="{$IMAGE_URL}Layouts/images/mrq.png" alt="" />
                     </if>
                     <if condition="number_format(($c['label_type'] % 100) / 10, 0) eq 1" >
-					<img class="four" src="Layouts/images/myy.png" alt="" />
+					<img class="four" src="{$IMAGE_URL}Layouts/images/myy.png" alt="" />
                     </if> 
 				</li>
                 </foreach>
@@ -161,10 +161,10 @@
 			<p class="one">热门商家</p>
 			<div id="hot_business">
 				<p>李记米粉</p>
-				<img class="one" src="Layouts/images/pic/2.png" alt="" />
+				<img class="one" src="{$IMAGE_URL}Layouts/images/pic/2.png" alt="" />
 				<a href="">桂林米粉产生于秦代，上面的“离合器”完完全全就是秦时的农具“耒”的形象。</a>
-				<img class="two" src="Layouts/images/ico_08.png" alt="" />
-				<img class="three" src="Layouts/images/ico_08.png" alt="" />
+				<img class="two" src="{$IMAGE_URL}Layouts/images/ico_08.png" alt="" />
+				<img class="three" src="{$IMAGE_URL}Layouts/images/ico_08.png" alt="" />
 				<span class="one">优惠劵</span>
 				<span class="two">会员卡</span>
 				<span class="three">[ 8 ]</span>
@@ -172,10 +172,10 @@
 			</div>
 			<div id="hot_business_02">
 				<p>李记米粉</p>
-				<img class="one" src="Layouts/images/pic/2.png" alt="" />
+				<img class="one" src="{$IMAGE_URL}Layouts/images/pic/2.png" alt="" />
 				<a href="">桂林米粉产生于秦代，上面的“离合器”完完全全就是秦时的农具“耒”的形象。</a>
-				<img class="two" src="Layouts/images/ico_08.png" alt="" />
-				<img class="three" src="Layouts/images/ico_08.png" alt="" />
+				<img class="two" src="{$IMAGE_URL}Layouts/images/ico_08.png" alt="" />
+				<img class="three" src="{$IMAGE_URL}Layouts/images/ico_08.png" alt="" />
 				<span class="one">优惠劵</span>
 				<span class="two">会员卡</span>
 				<span class="three">[ 8 ]</span>
@@ -183,10 +183,10 @@
 			</div>
 			<div id="hot_business_03">
 				<p>李记米粉</p>
-				<img class="one" src="Layouts/images/pic/2.png" alt="" />
+				<img class="one" src="{$IMAGE_URL}Layouts/images/pic/2.png" alt="" />
 				<a href="">桂林米粉产生于秦代，上面的“离合器”完完全全就是秦时的农具“耒”的形象。</a>
-				<img class="two" src="Layouts/images/ico_08.png" alt="" />
-				<img class="three" src="Layouts/images/ico_08.png" alt="" />
+				<img class="two" src="{$IMAGE_URL}Layouts/images/ico_08.png" alt="" />
+				<img class="three" src="{$IMAGE_URL}Layouts/images/ico_08.png" alt="" />
 				<span class="one">优惠劵</span>
 				<span class="two">会员卡</span>
 				<span class="three">[ 8 ]</span>
@@ -194,10 +194,10 @@
 			</div>
 			<div id="hot_business_04">
 				<p>李记米粉</p>
-				<img class="one" src="Layouts/images/pic/2.png" alt="" />
+				<img class="one" src="{$IMAGE_URL}Layouts/images/pic/2.png" alt="" />
 				<a href="">桂林米粉产生于秦代，上面的“离合器”完完全全就是秦时的农具“耒”的形象。</a>
-				<img class="two" src="Layouts/images/ico_08.png" alt="" />
-				<img class="three" src="Layouts/images/ico_08.png" alt="" />
+				<img class="two" src="{$IMAGE_URL}Layouts/images/ico_08.png" alt="" />
+				<img class="three" src="{$IMAGE_URL}Layouts/images/ico_08.png" alt="" />
 				<span class="one">优惠劵</span>
 				<span class="two">会员卡</span>
 				<span class="three">[ 8 ]</span>
@@ -210,13 +210,13 @@
 			<ul>
                 <foreach name="coupons_two" item="c">
 				<li>
-					<img class="one" src="Layouts/images/ico_11.png" alt="" />
+					<img class="one" src="{$IMAGE_URL}Layouts/images/ico_11.png" alt="" />
 					<a class="title" href="">{$c['name']}</a>
 					<a href="" class="content">{$c['description']}</a>
 					<a href="" class="btn">去看看</a>
-					<img class="two" src="{$c['picture_path']}" alt="" />
+					<img class="two" src="{$IMAGE_URL}{$c['picture_path']}" alt="" />
 					<div>
-						<img src="Layouts/images/ico_10.png" alt="" />
+						<img src="{$IMAGE_URL}Layouts/images/ico_10.png" alt="" />
 						<p>{$c['tag']}</p>
 					</div>
 				</li>
@@ -237,7 +237,7 @@
 				<p>地址：桂林市中山中路39号南方大厦9-5号</p>
 				<p>经营许可证：桂B2-20040001</p>
 			</div>
-			<img src="Layouts/images/police.png" alt="" />
+			<img src="{$IMAGE_URL}Layouts/images/police.png" alt="" />
 			<ul>
 				<li class="one"><a href="">关于我们</a></li>
 				<li><a href="">网站地图</a></li>

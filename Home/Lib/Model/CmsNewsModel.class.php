@@ -2,7 +2,6 @@
 class CmsnewsModel extends Model {
 
     protected $trueTableName = 't_monkey_cms_news';
-    protected $dbName = 'monkey';
 
 
     public function getCmsNewsByAdId($ids = array()) {

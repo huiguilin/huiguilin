@@ -2,8 +2,6 @@
 class UserProfileModel extends Model {
 
     protected $trueTableName = 't_monkey_user_profile';
-    protected $dbName = 'monkey';
-
 
     public function getUserProfileByUserId($ids = array()) {
         if (empty($ids)) {

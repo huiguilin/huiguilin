@@ -3,8 +3,6 @@
 class CouponModel extends Model {
 
     protected $trueTableName = 't_monkey_coupon_info';
-    protected $dbName = 'monkey';
-
 
     public function getCouponByCouponId($cIds = array()) {
         if (empty($cIds)) {

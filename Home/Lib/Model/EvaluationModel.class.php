@@ -2,7 +2,6 @@
 class EvaluationModel extends Model {
 
     protected $trueTableName = 't_monkey_partner_evaluation';
-    protected $dbName = 'monkey';
 
     public function getEvaluationByEvaluationId($ids = array()) {
         if (empty($ids)) {

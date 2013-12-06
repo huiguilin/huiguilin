@@ -2,7 +2,6 @@
 class PartnerPictureModel extends Model {
 
     protected $trueTableName = 't_monkey_partner_picture';
-    protected $dbName = 'monkey';
 
     public function getPartnerPictureByPartnerId($ids = array()) {
         if (empty($ids)) {

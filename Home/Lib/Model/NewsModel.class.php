@@ -2,8 +2,6 @@
 class NewsModel extends Model {
 
     protected $trueTableName = 't_monkey_news';
-    protected $dbName = 'monkey';
-
 
     public function getNewsByNewsId($ids = array()) {
         if (empty($ids)) {

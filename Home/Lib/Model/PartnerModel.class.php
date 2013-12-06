@@ -2,7 +2,6 @@
 class PartnerModel extends Model {
 
     protected $trueTableName = 't_monkey_partner_info';
-    protected $dbName = 'monkey';
 
     public function getPartnerByPartnerId($ids = array()) {
         if (empty($ids)) {

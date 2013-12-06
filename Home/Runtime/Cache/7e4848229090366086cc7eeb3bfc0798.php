@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="layouts/css/global.css" />
+<link rel="stylesheet" type="text/css" href="Layouts/css/global.css" />
 <link rel="stylesheet" type="text/css" href="Layouts/css/index.css">
 <script type="text/javascript" src="Layouts/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="Layouts/js/index.js"></script>
@@ -20,7 +20,7 @@
 <!-- 顶部订阅分享区域 -->
 	<div id="top_rss">
 		<div id="top_rss_box">
-			<img src="Layouts/images/cellphone.png">
+			<img src="<?php echo ($IMAGE_URL); ?>Layouts/images/cellphone.png">
 			<ul class="left_ul">
 				<li class="one"><a href="">手机版</a></li>
 				<li class="two"><a href="">使用帮助</a></li>
@@ -35,8 +35,8 @@
 <!-- 顶部订阅分享区域结束 -->
 <!-- Logo区域 -->
 	<div id="top_logo_box">
-		<a href="#"><img src="Layouts/images/logo.png" alt="惠桂林" id="logo" /></a>
-		<a href="#"><img src="Layouts/images/slogan.png" alt="吃喝玩乐，惠享生活" id="slogan" /></a>
+		<a href="#"><img src="<?php echo ($IMAGE_URL); ?>Layouts/images/logo.png" alt="惠桂林" id="logo" /></a>
+		<a href="#"><img src="<?php echo ($IMAGE_URL); ?>Layouts/images/slogan.png" alt="吃喝玩乐，惠享生活" id="slogan" /></a>
 		<ul id="login">
 			<li class="one"><a href="" class="one">登陆</a></li>
 			<li><a href="" class="two">快速注册</a></li>
@@ -46,7 +46,7 @@
 <!--  导航区域 -->
 	<div id="top_nav_box">
 		<div id="left_collection">
-			<img class="left_img" src="Layouts/images/ico_02.png" alt="" />
+			<img class="left_img" src="<?php echo ($IMAGE_URL); ?>Layouts/images/ico_02.png" alt="" />
 			<span>全部分类</span>
 		</div>
 		<ul id="nav">
@@ -81,7 +81,7 @@
 		<!-- 中间内容区域 -->
 		<div id="main_middle">
 			<div id="ad">
-                <?php if(is_array($ads)): foreach($ads as $key=>$a): ?><img src="<?php echo ($a['img_path']); ?>" /><?php endforeach; endif; ?>
+                <?php if(is_array($ads)): foreach($ads as $key=>$a): ?><img src="<?php echo ($IMAGE_URL); echo ($a['img_path']); ?>" /><?php endforeach; endif; ?>
 				<ul>
                 <?php if(is_array($ads)): foreach($ads as $i=>$a): if($i == 0): ?><li class="hover">1</li>
                     <?php else: ?>
@@ -90,18 +90,18 @@
 			</div>
 			<p class="one">惠字头吃货小分队</p>
 			<div id="map">
-				<img class="bg_bus" src="Layouts/images/bg_bus.png">
-				<img class="bus" src="Layouts/images/bus.png">
+				<img class="bg_bus" src="<?php echo ($IMAGE_URL); ?>Layouts/images/bg_bus.png">
+				<img class="bus" src="<?php echo ($IMAGE_URL); ?>Layouts/images/bus.png">
 				<div id="map_imgs">
-					<img class="light01" src="Layouts/images/ico_09.png">
-					<img class="light02" src="Layouts/images/ico_09.png">
-					<img class="light03" src="Layouts/images/ico_09.png">
-					<img class="light04" src="Layouts/images/ico_09.png">
-					<img class="light05" src="Layouts/images/ico_09.png">
-					<img class="light06" src="Layouts/images/ico_09.png">
-					<img class="light07" src="Layouts/images/ico_09.png">
-					<img class="light08" src="Layouts/images/ico_09.png">
-					<img class="light09" src="Layouts/images/ico_09.png">
+					<img class="light01" src="<?php echo ($IMAGE_URL); ?>Layouts/images/ico_09.png">
+					<img class="light02" src="<?php echo ($IMAGE_URL); ?>Layouts/images/ico_09.png">
+					<img class="light03" src="<?php echo ($IMAGE_URL); ?>Layouts/images/ico_09.png">
+					<img class="light04" src="<?php echo ($IMAGE_URL); ?>Layouts/images/ico_09.png">
+					<img class="light05" src="<?php echo ($IMAGE_URL); ?>Layouts/images/ico_09.png">
+					<img class="light06" src="<?php echo ($IMAGE_URL); ?>Layouts/images/ico_09.png">
+					<img class="light07" src="<?php echo ($IMAGE_URL); ?>Layouts/images/ico_09.png">
+					<img class="light08" src="<?php echo ($IMAGE_URL); ?>Layouts/images/ico_09.png">
+					<img class="light09" src="<?php echo ($IMAGE_URL); ?>Layouts/images/ico_09.png">
 				</div>	
 				<p class="map_102">102路</p>
 				<p class="map_title">线路介绍</p>
@@ -121,13 +121,13 @@
 				<p class="two">惠字头小编推荐</p>
 				<ul>
                 <?php if(is_array($recommends)): foreach($recommends as $key=>$r): ?><li>
-						<img src="<?php echo ($r['picture_path']); ?>">
+						<img src="<?php echo ($IMAGE_URL); echo ($r['picture_path']); ?>">
 						<div>
-							<img src="Layouts/images/ico_10.png">
+							<img src="<?php echo ($IMAGE_URL); ?>Layouts/images/ico_10.png">
 							<span><?php echo ($r['tag']); ?></span>
 						</div>
 						<a><?php echo ($r['name']); ?></a>
-						<img class="ico" src="Layouts/images/ico_08.png">
+						<img class="ico" src="<?php echo ($IMAGE_URL); ?>Layouts/images/ico_08.png">
 						<p class="three">推荐理由:</p>
 						<p class="four"><?php echo ($r['description']); ?></p>
 					</li><?php endforeach; endif; ?>
@@ -153,7 +153,7 @@
 		<div id="main_right">
 			<div id="app">
 				<p>扫一下,关注惠桂林微信</p>
-				<img src="Layouts/images/barcode.png" alt="二维码">
+				<img src="<?php echo ($IMAGE_URL); ?>Layouts/images/barcode.png" alt="二维码">
 				<a>点击下载手机APP</a>
 			</div>
 			<div class="hot_box">
@@ -161,7 +161,7 @@
 				<ul>
                     <?php if(is_array($hot_partners)): foreach($hot_partners as $key=>$h): ?><li>
 						<a href="" class="title"><?php echo ($h['name']); ?></a>
-						<img class="ico" src="Layouts/images/ico_08.png" alt="" />
+						<img class="ico" src="<?php echo ($IMAGE_URL); ?>Layouts/images/ico_08.png" alt="" />
 						<p class="yhj">优惠劵</p>
 						<p class="hyk">会员卡</p>
 						<p class="one">[8]</p>
@@ -187,7 +187,7 @@
 						<a href="" class="title title2"><?php echo ($ca['name']); ?></a>
 						<p class="six"><?php echo ($ca['description']); ?></p>
 						<div>
-							<img class="ico2"src="Layouts/images/vip.png" alt="" />
+							<img class="ico2"src="<?php echo ($IMAGE_URL); ?>Layouts/images/vip.png" alt="" />
 						</div>
 					</li><?php endforeach; endif; ?>
 				</ul>
@@ -205,7 +205,7 @@
 				<p>地址：桂林市中山中路39号南方大厦9-5号</p>
 				<p>经营许可证：桂B2-20040001</p>
 			</div>
-			<img src="Layouts/images/police.png" alt="" />
+			<img src="<?php echo ($IMAGE_URL); ?>Layouts/images/police.png" alt="" />
 			<ul>
 				<li class="one"><a href="">关于我们</a></li>
 				<li><a href="">网站地图</a></li>

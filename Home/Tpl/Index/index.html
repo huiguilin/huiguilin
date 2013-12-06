@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="layouts/css/global.css" />
+<link rel="stylesheet" type="text/css" href="Layouts/css/global.css" />
 <link rel="stylesheet" type="text/css" href="Layouts/css/index.css">
 <script type="text/javascript" src="Layouts/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="Layouts/js/index.js"></script>
@@ -20,7 +20,7 @@
 <!-- 顶部订阅分享区域 -->
 	<div id="top_rss">
 		<div id="top_rss_box">
-			<img src="Layouts/images/cellphone.png">
+			<img src="{$IMAGE_URL}Layouts/images/cellphone.png">
 			<ul class="left_ul">
 				<li class="one"><a href="">手机版</a></li>
 				<li class="two"><a href="">使用帮助</a></li>
@@ -35,8 +35,8 @@
 <!-- 顶部订阅分享区域结束 -->
 <!-- Logo区域 -->
 	<div id="top_logo_box">
-		<a href="#"><img src="Layouts/images/logo.png" alt="惠桂林" id="logo" /></a>
-		<a href="#"><img src="Layouts/images/slogan.png" alt="吃喝玩乐，惠享生活" id="slogan" /></a>
+		<a href="#"><img src="{$IMAGE_URL}Layouts/images/logo.png" alt="惠桂林" id="logo" /></a>
+		<a href="#"><img src="{$IMAGE_URL}Layouts/images/slogan.png" alt="吃喝玩乐，惠享生活" id="slogan" /></a>
 		<ul id="login">
 			<li class="one"><a href="" class="one">登陆</a></li>
 			<li><a href="" class="two">快速注册</a></li>
@@ -46,7 +46,7 @@
 <!--  导航区域 -->
 	<div id="top_nav_box">
 		<div id="left_collection">
-			<img class="left_img" src="Layouts/images/ico_02.png" alt="" />
+			<img class="left_img" src="{$IMAGE_URL}Layouts/images/ico_02.png" alt="" />
 			<span>全部分类</span>
 		</div>
 		<ul id="nav">
@@ -84,7 +84,7 @@
 		<div id="main_middle">
 			<div id="ad">
                 <foreach name="ads" item="a">
-				<img src="{$a['img_path']}" />
+				<img src="{$IMAGE_URL}{$a['img_path']}" />
                 </foreach>
 				<ul>
                 <foreach name="ads" item="a" key="i">
@@ -98,18 +98,18 @@
 			</div>
 			<p class="one">惠字头吃货小分队</p>
 			<div id="map">
-				<img class="bg_bus" src="Layouts/images/bg_bus.png">
-				<img class="bus" src="Layouts/images/bus.png">
+				<img class="bg_bus" src="{$IMAGE_URL}Layouts/images/bg_bus.png">
+				<img class="bus" src="{$IMAGE_URL}Layouts/images/bus.png">
 				<div id="map_imgs">
-					<img class="light01" src="Layouts/images/ico_09.png">
-					<img class="light02" src="Layouts/images/ico_09.png">
-					<img class="light03" src="Layouts/images/ico_09.png">
-					<img class="light04" src="Layouts/images/ico_09.png">
-					<img class="light05" src="Layouts/images/ico_09.png">
-					<img class="light06" src="Layouts/images/ico_09.png">
-					<img class="light07" src="Layouts/images/ico_09.png">
-					<img class="light08" src="Layouts/images/ico_09.png">
-					<img class="light09" src="Layouts/images/ico_09.png">
+					<img class="light01" src="{$IMAGE_URL}Layouts/images/ico_09.png">
+					<img class="light02" src="{$IMAGE_URL}Layouts/images/ico_09.png">
+					<img class="light03" src="{$IMAGE_URL}Layouts/images/ico_09.png">
+					<img class="light04" src="{$IMAGE_URL}Layouts/images/ico_09.png">
+					<img class="light05" src="{$IMAGE_URL}Layouts/images/ico_09.png">
+					<img class="light06" src="{$IMAGE_URL}Layouts/images/ico_09.png">
+					<img class="light07" src="{$IMAGE_URL}Layouts/images/ico_09.png">
+					<img class="light08" src="{$IMAGE_URL}Layouts/images/ico_09.png">
+					<img class="light09" src="{$IMAGE_URL}Layouts/images/ico_09.png">
 				</div>	
 				<p class="map_102">102路</p>
 				<p class="map_title">线路介绍</p>
@@ -132,13 +132,13 @@
 				<ul>
                 <foreach name="recommends" item="r">
 					<li>
-						<img src="{$r['picture_path']}">
+						<img src="{$IMAGE_URL}{$r['picture_path']}">
 						<div>
-							<img src="Layouts/images/ico_10.png">
+							<img src="{$IMAGE_URL}Layouts/images/ico_10.png">
 							<span>{$r['tag']}</span>
 						</div>
 						<a>{$r['name']}</a>
-						<img class="ico" src="Layouts/images/ico_08.png">
+						<img class="ico" src="{$IMAGE_URL}Layouts/images/ico_08.png">
 						<p class="three">推荐理由:</p>
 						<p class="four">{$r['description']}</p>
 					</li>
@@ -167,7 +167,7 @@
 		<div id="main_right">
 			<div id="app">
 				<p>扫一下,关注惠桂林微信</p>
-				<img src="Layouts/images/barcode.png" alt="二维码">
+				<img src="{$IMAGE_URL}Layouts/images/barcode.png" alt="二维码">
 				<a>点击下载手机APP</a>
 			</div>
 			<div class="hot_box">
@@ -176,7 +176,7 @@
                     <foreach name="hot_partners" item="h">
 					<li>
 						<a href="" class="title">{$h['name']}</a>
-						<img class="ico" src="Layouts/images/ico_08.png" alt="" />
+						<img class="ico" src="{$IMAGE_URL}Layouts/images/ico_08.png" alt="" />
 						<p class="yhj">优惠劵</p>
 						<p class="hyk">会员卡</p>
 						<p class="one">[8]</p>
@@ -206,7 +206,7 @@
 						<a href="" class="title title2">{$ca['name']}</a>
 						<p class="six">{$ca['description']}</p>
 						<div>
-							<img class="ico2"src="Layouts/images/vip.png" alt="" />
+							<img class="ico2"src="{$IMAGE_URL}Layouts/images/vip.png" alt="" />
 						</div>
 					</li>
                 </foreach>
@@ -225,7 +225,7 @@
 				<p>地址：桂林市中山中路39号南方大厦9-5号</p>
 				<p>经营许可证：桂B2-20040001</p>
 			</div>
-			<img src="Layouts/images/police.png" alt="" />
+			<img src="{$IMAGE_URL}Layouts/images/police.png" alt="" />
 			<ul>
 				<li class="one"><a href="">关于我们</a></li>
 				<li><a href="">网站地图</a></li>
